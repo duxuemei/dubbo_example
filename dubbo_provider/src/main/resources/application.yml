@@ -1,0 +1,15 @@
+server:
+  port: 8080
+#db连接信息以及连接池配置
+spring:
+  dubbo:
+    application:
+      name: dubbo_provider
+    registry:
+      address: zookeeper://localhost:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    provider:
+      group: xiaodu_test
+

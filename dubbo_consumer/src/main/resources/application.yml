@@ -1,0 +1,12 @@
+server:
+  port: 8081
+#db连接信息以及连接池配置
+spring:
+  dubbo:
+    application:
+      name: dubbo_consumer
+    registry:
+      address: zookeeper://localhost:2181
+    protocol:
+      name: dubbo
+      port: 20880
